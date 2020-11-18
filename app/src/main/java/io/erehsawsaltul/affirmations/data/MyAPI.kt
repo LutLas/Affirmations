@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 
 
-private const val privateToken = "5904d9b6-a1eb-41ff-9eb9-6df50c8c8281"
+private const val privateToken = "71a1c5c8-6e74-4a29-bb0f-e8f1011013bd"
 
 interface MyAPI {
     @Headers("Accept: application/json")

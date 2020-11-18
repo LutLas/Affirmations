@@ -79,7 +79,11 @@ class MainActivity : AppCompatActivity() {
                         binding.dummyTv.text = hymn.title.size.toString()*//*
 
                     }*/
+                    //filter must come here
+                    //val filteredHymns = response.body()!!.no.filter { it.contains("numberFromUser") }
                     GlobalScope.launch (Dispatchers.Main){
+                        //Or filter must come here
+                        //val filteredHymns = response.body()!!.no.filter { it.contains("numberFromUser") }
                         val finalDataSet = dataSource.loadHymns(response.body()!!)
                         recyclerView.adapter = ItemAdapter(this@MainActivity, finalDataSet)
                         recyclerView.setHasFixedSize(true)

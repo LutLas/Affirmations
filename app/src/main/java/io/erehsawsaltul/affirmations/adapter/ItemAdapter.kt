@@ -50,9 +50,6 @@ class ItemAdapter(
         //holder.textViewTitle.text = item.title.values.toString()
         holder.textViewTitle.text = TextUtils.join("\n",item.title.values)
         holder.textViewAuthor.text = TextUtils.join("\n",item.author.values)
-        /*for (titled in item.title.values){
-            holder.textViewTitle.text = holder.textViewTitleStringer.plus("$titled\n")
-        }*/
     }
 
     /**
